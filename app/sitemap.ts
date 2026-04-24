@@ -1,9 +1,11 @@
 import type { MetadataRoute } from "next";
 
+import { PRICING_PLANS } from "@/lib/constants";
+
 const BASE_URL = "https://baldeaglestreamz.com";
 
 export default function sitemap(): MetadataRoute.Sitemap {
-  return [
+  const staticPages: MetadataRoute.Sitemap = [
     {
       url: BASE_URL,
       lastModified: new Date(),
@@ -35,4 +37,13 @@ export default function sitemap(): MetadataRoute.Sitemap {
       priority: 0.6,
     },
   ];
+
+  const planPages: MetadataRoute.Sitemap = PRICING_PLANS.map((plan) => ({
+    url: `${BASE_URL}/subscriptions/${plan.id}`,
+    lastModified: new Date(),
+    changeFrequency: "monthly",
+    priority: 0.8,
+  }));
+
+  return [...staticPages, ...planPages];
 }
