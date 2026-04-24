@@ -9,7 +9,7 @@ const inter = Inter({
 });
 
 export const metadata: Metadata = {
-  metadataBase: new URL("https://boldeagleiptv.com"),
+  metadataBase: new URL("https://baldeaglestreamz.com"),
   title: {
     default: "Bald Eagle Streamz — #1 IPTV Provider in the USA",
     template: "%s | Bald Eagle Streamz",
@@ -29,7 +29,7 @@ export const metadata: Metadata = {
   openGraph: {
     type: "website",
     locale: "en_US",
-    url: "https://boldeagleiptv.com",
+    url: "https://baldeaglestreamz.com",
     siteName: "Bald Eagle Streamz",
     title: "Bald Eagle Streamz — #1 IPTV Provider in the USA",
     description:

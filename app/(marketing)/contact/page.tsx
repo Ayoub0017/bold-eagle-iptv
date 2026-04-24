@@ -23,7 +23,7 @@ const CONTACT_METHODS = [
   {
     icon: Mail,
     label: "Email Support",
-    value: "support@boldeagleiptv.com",
+    value: "support@baldeaglestreamz.com",
     description: "For billing, account, and general inquiries",
   },
   {
@@ -41,7 +41,7 @@ const CONTACT_METHODS = [
   {
     icon: IconX,
     label: "Twitter / X",
-    value: "@BoldEagleIPTV",
+    value: "@BaldEagleStreamz",
     description: "For quick updates and announcements",
   },
 ];

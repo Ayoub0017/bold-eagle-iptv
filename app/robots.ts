@@ -9,7 +9,7 @@ export default function robots(): MetadataRoute.Robots {
         disallow: ["/api/", "/_next/"],
       },
     ],
-    sitemap: "https://boldeagleiptv.com/sitemap.xml",
-    host: "https://boldeagleiptv.com",
+    sitemap: "https://baldeaglestreamz.com/sitemap.xml",
+    host: "https://baldeaglestreamz.com",
   };
 }

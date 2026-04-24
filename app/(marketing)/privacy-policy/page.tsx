@@ -112,7 +112,7 @@ export default function PrivacyPolicyPage() {
             </ul>
             <p>
               To exercise any of these rights, contact us at{" "}
-              <a href="mailto:privacy@boldeagleiptv.com">privacy@boldeagleiptv.com</a>.
+              <a href="mailto:privacy@baldeaglestreamz.com">privacy@baldeaglestreamz.com</a>.
             </p>
 
             <h2>6. Security</h2>
@@ -149,8 +149,8 @@ export default function PrivacyPolicyPage() {
               For questions about this Privacy Policy or our data practices, contact us at:
             </p>
             <ul>
-              <li>Email: <a href="mailto:privacy@boldeagleiptv.com">privacy@boldeagleiptv.com</a></li>
-              <li>Support portal: <a href="/contact">boldeagleiptv.com/contact</a></li>
+              <li>Email: <a href="mailto:privacy@baldeaglestreamz.com">privacy@baldeaglestreamz.com</a></li>
+              <li>Support portal: <a href="/contact">baldeaglestreamz.com/contact</a></li>
             </ul>
           </div>
         </div>

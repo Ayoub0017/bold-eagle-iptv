@@ -159,7 +159,7 @@ export default function TermsOfUsePage() {
             <h2>13. Contact</h2>
             <p>
               For questions about these Terms, contact us at{" "}
-              <a href="mailto:legal@boldeagleiptv.com">legal@boldeagleiptv.com</a> or through
+              <a href="mailto:legal@baldeaglestreamz.com">legal@baldeaglestreamz.com</a> or through
               our <a href="/contact">support portal</a>.
             </p>
           </div>

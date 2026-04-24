@@ -14,8 +14,8 @@ const nextConfig: NextConfig = {
     return [
       {
         source: "/:path*",
-        has: [{ type: "host", value: "www.boldeagleiptv.com" }],
-        destination: "https://boldeagleiptv.com/:path*",
+        has: [{ type: "host", value: "www.baldeaglestreamz.com" }],
+        destination: "https://baldeaglestreamz.com/:path*",
         permanent: true,
       },
     ];
