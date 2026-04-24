@@ -68,7 +68,7 @@ export const PRICING_PLANS: PricingPlan[] = [
     duration: "3 Months",
     price: 30,
     perMonth: 10,
-    description: "Perfect for trying out Bold Eagle IPTV",
+    description: "Perfect for trying out Bald Eagle Streamz",
     features: [
       "15,000+ Live Channels",
       "50,000+ VOD Content",
@@ -150,7 +150,7 @@ export const TESTIMONIALS: Testimonial[] = [
   {
     id: "1",
     quote:
-      "Switched to Bold Eagle 8 months ago and haven't looked back. The picture quality is incredible — my sports channels are crystal clear and there's never any lag during live games.",
+      "Switched to Bald Eagle Streamz 8 months ago and haven't looked back. The picture quality is incredible — my sports channels are crystal clear and there's never any lag during live games.",
     author: "Marcus T.",
     location: "United Kingdom",
     rating: 5,
@@ -174,7 +174,7 @@ export const TESTIMONIALS: Testimonial[] = [
   {
     id: "4",
     quote:
-      "I travel for work constantly. Bold Eagle works seamlessly in every country I've visited. The app is clean, fast, and works on my laptop, phone, and hotel TV with no setup hassle.",
+      "I travel for work constantly. Bald Eagle Streamz works seamlessly in every country I've visited. The app is clean, fast, and works on my laptop, phone, and hotel TV with no setup hassle.",
     author: "Priya S.",
     location: "United Arab Emirates",
     rating: 5,
@@ -222,7 +222,7 @@ export const FAQS: FAQ[] = [
     id: "4",
     question: "What devices are supported?",
     answer:
-      "Bold Eagle IPTV works on Smart TVs (Samsung, LG, Sony), Android and iOS phones and tablets, Amazon Fire Stick, Android TV boxes, MAG devices, PC/Mac via VLC or any IPTV player, and Nvidia Shield.",
+      "Bald Eagle Streamz works on Smart TVs (Samsung, LG, Sony), Android and iOS phones and tablets, Amazon Fire Stick, Android TV boxes, MAG devices, PC/Mac via VLC or any IPTV player, and Nvidia Shield.",
   },
   {
     id: "5",

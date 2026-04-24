@@ -4,9 +4,9 @@ import { PageHeader } from "@/components/sections/PageHeader";
 import { CTASection } from "@/components/sections/CTASection";
 
 export const metadata: Metadata = {
-  title: "About Bold Eagle IPTV — American IPTV Provider",
+  title: "About Bald Eagle Streamz — American IPTV Provider",
   description:
-    "Bold Eagle IPTV is a trusted American IPTV provider with 15,000+ channels and 50,000+ VOD titles. Learn about our mission, values, and story.",
+    "Bald Eagle Streamz is a trusted American IPTV provider with 15,000+ channels and 50,000+ VOD titles. Learn about our mission, values, and story.",
   alternates: { canonical: "/about" },
 };
 
@@ -52,7 +52,7 @@ const VALUES = [
 const TIMELINE = [
   {
     year: "2018",
-    event: "Bold Eagle IPTV is founded with 2,000 channels and a small but dedicated subscriber base.",
+    event: "Bald Eagle Streamz is founded with 2,000 channels and a small but dedicated subscriber base.",
   },
   {
     year: "2020",
@@ -72,8 +72,8 @@ export default function AboutPage() {
   return (
     <>
       <PageHeader
-        title="About Bold Eagle IPTV"
-        subtitle="Bold Eagle IPTV is an American IPTV provider that offers 15,000+ live channels, 50,000+ movies and series, and crystal-clear HD & 4K streaming — all with 24/7 live support and no long-term contracts."
+        title="About Bald Eagle Streamz"
+        subtitle="Bald Eagle Streamz is an American IPTV provider that offers 15,000+ live channels, 50,000+ movies and series, and crystal-clear HD & 4K streaming — all with 24/7 live support and no long-term contracts."
         breadcrumbs={[{ label: "About" }]}
       />
 
@@ -166,7 +166,7 @@ export default function AboutPage() {
       </section>
 
       <CTASection
-        title="Ready to experience Bold Eagle IPTV?"
+        title="Ready to experience Bald Eagle Streamz?"
         description="Join thousands of subscribers worldwide. Start your free 24-hour trial today — no credit card required."
       />
     </>

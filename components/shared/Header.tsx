@@ -31,7 +31,7 @@ export function Header() {
       <div className="container-box">
         <div className="flex h-16 items-center justify-between">
           {/* Logo */}
-          <Link href="/" className="flex items-center gap-2.5 group" aria-label="Bold Eagle IPTV home">
+          <Link href="/" className="flex items-center gap-2.5 group" aria-label="Bald Eagle Streamz home">
             <div className={cn(
               "flex h-8 w-8 items-center justify-center rounded-[var(--radius-lg)]",
               "bg-[var(--accent)] text-[var(--accent-fg)]",
@@ -41,7 +41,7 @@ export function Header() {
               <Zap className="h-4 w-4" fill="currentColor" />
             </div>
             <span className="text-base font-bold tracking-tight text-[var(--text-primary)]">
-              Bold Eagle <span className="text-[var(--accent)]">IPTV</span>
+              Bald Eagle Streamz <span className="text-[var(--accent)]">IPTV</span>
             </span>
           </Link>
 

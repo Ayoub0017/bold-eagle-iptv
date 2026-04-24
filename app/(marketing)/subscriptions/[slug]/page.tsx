@@ -23,7 +23,7 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
   }
 
   return {
-    title: `${plan.name} Plan - ${plan.duration} IPTV Subscription | Bold Eagle IPTV`,
+    title: `${plan.name} Plan - ${plan.duration} IPTV Subscription | Bald Eagle Streamz`,
     description: `Get the ${plan.name} IPTV subscription plan for ${plan.duration}. Includes ${plan.features.join(", ").substring(0, 100)}... Stream in HD and 4K today.`,
     alternates: {
       canonical: `/subscriptions/${plan.id}`,

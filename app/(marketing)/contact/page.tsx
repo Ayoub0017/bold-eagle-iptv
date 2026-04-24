@@ -13,9 +13,9 @@ import { ContactForm } from "@/components/sections/ContactForm";
 import { CTASection } from "@/components/sections/CTASection";
 
 export const metadata: Metadata = {
-  title: "Contact Bold Eagle IPTV — 24/7 Support",
+  title: "Contact Bald Eagle Streamz — 24/7 Support",
   description:
-    "Need help with your IPTV subscription? Contact Bold Eagle IPTV's 24/7 support team via live chat or email. Average response time under 15 minutes.",
+    "Need help with your IPTV subscription? Contact Bald Eagle Streamz's 24/7 support team via live chat or email. Average response time under 15 minutes.",
   alternates: { canonical: "/contact" },
 };
 

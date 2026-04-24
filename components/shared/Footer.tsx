@@ -75,13 +75,13 @@ export function Footer() {
             <Link
               href="/"
               className="inline-flex items-center gap-2.5 group"
-              aria-label="Bold Eagle IPTV home"
+              aria-label="Bald Eagle Streamz home"
             >
               <div className="flex h-8 w-8 items-center justify-center rounded-[var(--radius-lg)] bg-[var(--accent)] text-[var(--accent-fg)]">
                 <Zap className="h-4 w-4" fill="currentColor" />
               </div>
               <span className="text-base font-bold tracking-tight text-[var(--text-primary)]">
-                Bold Eagle <span className="text-[var(--accent)]">IPTV</span>
+                Bald Eagle Streamz <span className="text-[var(--accent)]">IPTV</span>
               </span>
             </Link>
             <p className="mt-4 max-w-xs text-sm text-[var(--text-secondary)] leading-relaxed">
@@ -129,7 +129,7 @@ export function Footer() {
 
         <div className="flex flex-col gap-3 sm:flex-row sm:items-center sm:justify-between">
           <p className="text-xs text-[var(--text-muted)]">
-            &copy; {new Date().getFullYear()} Bold Eagle IPTV. All rights reserved.
+            &copy; {new Date().getFullYear()} Bald Eagle Streamz. All rights reserved.
           </p>
           <p className="text-xs text-[var(--text-muted)]">
             Premium IPTV. Crystal Clear. Always On.

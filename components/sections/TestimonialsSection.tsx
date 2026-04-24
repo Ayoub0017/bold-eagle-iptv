@@ -15,7 +15,7 @@ export function TestimonialsSection() {
             Trusted by viewers worldwide
           </h2>
           <p className="text-[var(--text-secondary)] max-w-lg mx-auto leading-relaxed">
-            Join thousands of happy subscribers who made the switch to Bold Eagle IPTV.
+            Join thousands of happy subscribers who made the switch to Bald Eagle Streamz.
           </p>
         </div>
 

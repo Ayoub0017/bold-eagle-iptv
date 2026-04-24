@@ -2,9 +2,9 @@ import type { Metadata } from "next";
 import { PageHeader } from "@/components/sections/PageHeader";
 
 export const metadata: Metadata = {
-  title: "Terms of Use — Bold Eagle IPTV",
+  title: "Terms of Use — Bald Eagle Streamz",
   description:
-    "Read Bold Eagle IPTV's Terms of Use. Understand your rights and obligations when subscribing to and using our IPTV streaming service.",
+    "Read Bald Eagle Streamz's Terms of Use. Understand your rights and obligations when subscribing to and using our IPTV streaming service.",
   robots: { index: false },
   alternates: { canonical: "/terms-of-use" },
 };
@@ -22,14 +22,14 @@ export default function TermsOfUsePage() {
         <div className="container-box">
           <div className="mx-auto prose-legal">
             <p>
-              Please read these Terms of Use (&ldquo;Terms&rdquo;) carefully before using the Bold Eagle
+              Please read these Terms of Use (&ldquo;Terms&rdquo;) carefully before using the Bald Eagle Streamz
               IPTV website and streaming service. By accessing or using our service, you agree to
               be bound by these Terms. If you do not agree, do not use the service.
             </p>
 
             <h2>1. Service Description</h2>
             <p>
-              Bold Eagle IPTV provides a subscription-based Internet Protocol Television (IPTV) service
+              Bald Eagle Streamz provides a subscription-based Internet Protocol Television (IPTV) service
               that allows subscribers to access live television channels and video-on-demand content
               over the internet. The service is available on a variety of compatible devices.
             </p>
@@ -101,12 +101,12 @@ export default function TermsOfUsePage() {
             <h2>6. Intellectual Property</h2>
             <p>
               All content, trademarks, logos, and intellectual property on our website are owned by
-              or licensed to Bold Eagle IPTV. You may not reproduce, distribute, or create derivative
+              or licensed to Bald Eagle Streamz. You may not reproduce, distribute, or create derivative
               works without express written permission.
             </p>
             <p>
               The streaming content accessible through the service remains the property of its
-              respective rights holders. Bold Eagle IPTV does not claim ownership of third-party content.
+              respective rights holders. Bald Eagle Streamz does not claim ownership of third-party content.
             </p>
 
             <h2>7. Service Availability</h2>
@@ -127,7 +127,7 @@ export default function TermsOfUsePage() {
 
             <h2>9. Limitation of Liability</h2>
             <p>
-              To the maximum extent permitted by law, Bold Eagle IPTV shall not be liable for
+              To the maximum extent permitted by law, Bald Eagle Streamz shall not be liable for
               indirect, incidental, special, consequential, or punitive damages arising from your
               use of or inability to use the service, even if advised of the possibility of such
               damages. Our total liability shall not exceed the amount paid by you in the 3 months
@@ -138,7 +138,7 @@ export default function TermsOfUsePage() {
             <p>
               These Terms are governed by and construed in accordance with applicable law. Any
               disputes arising from these Terms shall be resolved through binding arbitration or
-              in the courts of the jurisdiction in which Bold Eagle IPTV operates, as permitted
+              in the courts of the jurisdiction in which Bald Eagle Streamz operates, as permitted
               by law.
             </p>
 

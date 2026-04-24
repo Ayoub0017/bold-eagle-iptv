@@ -2,9 +2,9 @@ import type { Metadata } from "next";
 import { PageHeader } from "@/components/sections/PageHeader";
 
 export const metadata: Metadata = {
-  title: "Privacy Policy — Bold Eagle IPTV",
+  title: "Privacy Policy — Bald Eagle Streamz",
   description:
-    "Read Bold Eagle IPTV's Privacy Policy. Learn how we collect, use, and protect your personal data in compliance with applicable privacy regulations.",
+    "Read Bald Eagle Streamz's Privacy Policy. Learn how we collect, use, and protect your personal data in compliance with applicable privacy regulations.",
   robots: { index: false },
   alternates: { canonical: "/privacy-policy" },
 };
@@ -22,7 +22,7 @@ export default function PrivacyPolicyPage() {
         <div className="container-box">
           <div className="mx-auto prose-legal">
             <p>
-              Bold Eagle IPTV (&ldquo;we&rdquo;, &ldquo;our&rdquo;, or &ldquo;us&rdquo;) is committed to
+              Bald Eagle Streamz (&ldquo;we&rdquo;, &ldquo;our&rdquo;, or &ldquo;us&rdquo;) is committed to
               protecting your privacy. This Privacy Policy explains how we collect, use, disclose, and
               safeguard your information when you visit our website or use our service. Please read
               this policy carefully.

@@ -26,7 +26,7 @@ export function FeatureGrid() {
         {/* Section header */}
         <div className="mb-14 text-center">
           <p className="text-xs font-semibold uppercase tracking-widest text-[var(--accent)] mb-3">
-            Why Bold Eagle
+            Why Bald Eagle Streamz
           </p>
           <h2 className="heading-display heading-2 text-balance mb-4">
             Everything you need to stream without limits

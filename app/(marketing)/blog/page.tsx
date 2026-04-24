@@ -7,7 +7,7 @@ import { BLOG_POSTS } from "@/lib/constants";
 export const metadata: Metadata = {
   title: "IPTV Blog — Guides, Tips & Streaming News",
   description:
-    "IPTV setup guides, streaming tips, device tutorials, and channel reviews from the Bold Eagle IPTV team. Stay informed and stream smarter.",
+    "IPTV setup guides, streaming tips, device tutorials, and channel reviews from the Bald Eagle Streamz team. Stay informed and stream smarter.",
   alternates: { canonical: "/blog" },
 };
 
