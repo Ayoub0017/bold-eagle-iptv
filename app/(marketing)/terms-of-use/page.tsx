@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import { PageHeader } from "@/components/sections/PageHeader";
 
 export const metadata: Metadata = {
-  title: "Terms of Use — Bald Eagle Streamz",
+  title: "Terms of Use",
   description:
     "Read Bald Eagle Streamz's Terms of Use. Understand your rights and obligations when subscribing to and using our IPTV streaming service.",
   robots: { index: false },

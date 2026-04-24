@@ -9,7 +9,9 @@ import { DevicesSection } from "@/components/sections/DevicesSection";
 import { PRICING_PLANS } from "@/lib/constants";
 
 export const metadata: Metadata = {
-  title: "Bald Eagle Streamz — #1 IPTV Provider in the USA",
+  title: {
+    absolute: "Bald Eagle Streamz — #1 IPTV Provider in the USA",
+  },
   description:
     "Bald Eagle Streamz offers 15,000+ live channels & 50,000+ movies in HD & 4K. Best IPTV service in the USA. 50+ countries covered. Start your free trial today.",
   alternates: { canonical: "/" },

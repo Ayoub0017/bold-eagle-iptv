@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import { PageHeader } from "@/components/sections/PageHeader";
 
 export const metadata: Metadata = {
-  title: "Privacy Policy — Bald Eagle Streamz",
+  title: "Privacy Policy",
   description:
     "Read Bald Eagle Streamz's Privacy Policy. Learn how we collect, use, and protect your personal data in compliance with applicable privacy regulations.",
   robots: { index: false },

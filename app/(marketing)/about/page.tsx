@@ -4,7 +4,7 @@ import { PageHeader } from "@/components/sections/PageHeader";
 import { CTASection } from "@/components/sections/CTASection";
 
 export const metadata: Metadata = {
-  title: "About Bald Eagle Streamz — American IPTV Provider",
+  title: "About Us — American IPTV Provider",
   description:
     "Bald Eagle Streamz is a trusted American IPTV provider with 15,000+ channels and 50,000+ VOD titles. Learn about our mission, values, and story.",
   alternates: { canonical: "/about" },
