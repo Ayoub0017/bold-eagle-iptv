@@ -49,6 +49,17 @@ export const metadata: Metadata = {
     description:
       "15,000+ live channels & 50,000+ movies in HD & 4K. Free 24-hour trial. No contracts.",
   },
+  robots: {
+    index: true,
+    follow: true,
+    googleBot: {
+      index: true,
+      follow: true,
+      "max-video-preview": -1,
+      "max-image-preview": "large",
+      "max-snippet": -1,
+    },
+  },
 };
 
 export default function RootLayout({
