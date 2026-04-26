@@ -2,6 +2,9 @@ import React from "react";
 import Link from "next/link";
 import { ArrowRight } from "lucide-react";
 import { Button } from "@/components/ui/button";
+import { WHATSAPP_NUMBER } from "@/lib/constants";
+
+const FREE_TRIAL_WHATSAPP_URL = `https://wa.me/${WHATSAPP_NUMBER.replace(/[^0-9]/g, "")}?text=${encodeURIComponent("Hello! I would like to request a free 24-hour IPTV trial.")}`;
 
 interface CTASectionProps {
   title?: string;
@@ -41,10 +44,10 @@ export function CTASection({
           </p>
           <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
             <Button variant="primary" size="xl" asChild>
-              <Link href="/subscriptions" className="group">
+              <a href={FREE_TRIAL_WHATSAPP_URL} target="_blank" rel="noopener noreferrer" className="group">
                 Get a Free Trial
                 <ArrowRight className="h-4 w-4 transition-transform group-hover:translate-x-0.5" />
-              </Link>
+              </a>
             </Button>
             <Button variant="secondary" size="xl" asChild>
               <Link href="/contact">Contact Support</Link>

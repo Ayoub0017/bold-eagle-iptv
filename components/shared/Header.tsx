@@ -7,7 +7,9 @@ import { Menu, Zap } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Sheet, SheetTrigger, SheetContent, SheetClose } from "@/components/ui/sheet";
 import { cn } from "@/lib/utils";
-import { NAV_ITEMS } from "@/lib/constants";
+import { NAV_ITEMS, WHATSAPP_NUMBER } from "@/lib/constants";
+
+const FREE_TRIAL_WHATSAPP_URL = `https://wa.me/${WHATSAPP_NUMBER.replace(/[^0-9]/g, "")}?text=${encodeURIComponent("Hello! I would like to request a free 24-hour IPTV trial.")}`;
 
 export function Header() {
   const [scrolled, setScrolled] = useState(false);
@@ -67,7 +69,7 @@ export function Header() {
           {/* Desktop CTA */}
           <div className="hidden md:flex items-center gap-3">
             <Button variant="primary" size="sm" asChild>
-              <Link href="/subscriptions">Get Free Trial</Link>
+              <a href={FREE_TRIAL_WHATSAPP_URL} target="_blank" rel="noopener noreferrer">Get Free Trial</a>
             </Button>
           </div>
 
@@ -104,7 +106,7 @@ export function Header() {
                 <div className="mt-6 flex flex-col gap-3 pt-6 border-t border-[var(--border)]">
                   <Button variant="primary" size="lg" className="w-full" asChild>
                     <SheetClose asChild>
-                      <Link href="/subscriptions">Get Free Trial</Link>
+                      <a href={FREE_TRIAL_WHATSAPP_URL} target="_blank" rel="noopener noreferrer">Get Free Trial</a>
                     </SheetClose>
                   </Button>
                 </div>
