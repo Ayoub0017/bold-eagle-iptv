@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { Mail, Clock, MessageSquare } from "lucide-react";
+import { Mail, Clock, MessageSquare, MessageCircle } from "lucide-react";
 
 function IconX({ className }: { className?: string }) {
   return (
@@ -9,8 +9,11 @@ function IconX({ className }: { className?: string }) {
   );
 }
 import { PageHeader } from "@/components/sections/PageHeader";
-import { ContactForm } from "@/components/sections/ContactForm";
 import { CTASection } from "@/components/sections/CTASection";
+import { Button } from "@/components/ui/button";
+import { WHATSAPP_NUMBER } from "@/lib/constants";
+
+const CONTACT_WHATSAPP_URL = `https://wa.me/${WHATSAPP_NUMBER.replace(/[^0-9]/g, "")}?text=${encodeURIComponent("Hello! I need help with my IPTV subscription.")}`;
 
 export const metadata: Metadata = {
   title: "Contact 24/7 Support",
@@ -58,15 +61,20 @@ export default function ContactPage() {
       <section className="py-16 md:py-20" aria-label="Contact information">
         <div className="container-box">
           <div className="grid gap-10 lg:grid-cols-2 lg:gap-16">
-            {/* Form */}
-            <div>
-              <h2 className="text-2xl font-bold text-[var(--text-primary)] mb-2">
-                Send us a message
+            {/* Direct Contact */}
+            <div className="flex flex-col justify-center bg-[var(--bg-subtle)] p-8 rounded-[var(--radius-2xl)] border border-[var(--border)] h-full">
+              <h2 className="text-2xl font-bold text-[var(--text-primary)] mb-3">
+                Send us a message on WhatsApp
               </h2>
-              <p className="text-sm text-[var(--text-secondary)] mb-6">
-                Fill out the form and we&rsquo;ll get back to you within 2 hours.
+              <p className="text-sm text-[var(--text-secondary)] mb-8 leading-relaxed">
+                For the fastest response, reach out to us directly on WhatsApp. Our support team is available 24/7 and typically replies within minutes.
               </p>
-              <ContactForm />
+              <Button variant="primary" size="xl" className="w-full sm:w-auto" asChild>
+                <a href={CONTACT_WHATSAPP_URL} target="_blank" rel="noopener noreferrer" className="group flex items-center justify-center gap-2 bg-[#25D366] hover:bg-[#1ebd5c] text-white border-none">
+                  <MessageCircle className="h-5 w-5" />
+                  Chat on WhatsApp
+                </a>
+              </Button>
             </div>
 
             {/* Contact info */}
