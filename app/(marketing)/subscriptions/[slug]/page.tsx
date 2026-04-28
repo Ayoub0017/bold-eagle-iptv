@@ -27,6 +27,15 @@ import {
   PLAN_FAQS,
   TESTIMONIALS,
 } from "@/lib/constants";
+import { SchemaMarkup } from "@/components/schema-markup";
+import {
+  generateProductSchema,
+  generateServiceSchema,
+  generateWebPageSchema,
+  generateBreadcrumbSchema,
+  generateFAQSchema,
+  SITE_URL,
+} from "@/lib/schema";
 
 /* ── Static generation ── */
 export function generateStaticParams() {
@@ -103,8 +112,47 @@ export default async function PlanPage({
   );
   const freeTrialUrl = `https://wa.me/${WHATSAPP_NUMBER.replace(/[^0-9]/g, "")}?text=${freeTrialMessage}`;
 
+  const planUrl = `${SITE_URL}/subscriptions/${plan.id}`;
+  const planImage = PLAN_HERO_IMAGES[plan.id]?.src ? `${SITE_URL}${PLAN_HERO_IMAGES[plan.id].src}` : `${SITE_URL}/images/plan-hero.png`;
+  
+  const schemas = [
+    generateWebPageSchema(
+      `${plan.name} Plan - ${plan.duration} IPTV Subscription`,
+      `Get the Bald Eagle Streamz ${plan.name} plan — ${plan.duration} of premium IPTV for just $${plan.price} ($${plan.perMonth.toFixed(2)}/mo).`,
+      planUrl
+    ),
+    generateBreadcrumbSchema([
+      { name: "Home", url: SITE_URL },
+      { name: "Subscriptions", url: `${SITE_URL}/subscriptions` },
+      { name: plan.name, url: planUrl },
+    ]),
+    generateProductSchema({
+      name: `${plan.name} IPTV Plan (${plan.duration})`,
+      description: plan.description,
+      price: plan.price,
+      url: planUrl,
+      imageUrl: planImage,
+      sku: plan.id,
+      reviews: TESTIMONIALS.map((t) => ({
+        author: t.author,
+        reviewBody: t.quote,
+        ratingValue: t.rating,
+      })),
+    }),
+    generateServiceSchema({
+      name: `${plan.name} IPTV Subscription Service`,
+      description: plan.description,
+      url: planUrl,
+    }),
+  ];
+
+  if (planFaqs.length > 0) {
+    schemas.push(generateFAQSchema(planFaqs));
+  }
+
   return (
     <>
+      <SchemaMarkup schemas={schemas} />
       {/* ═══════════════════════════════════════════
           HERO — 2-Column: Image + Price/CTA
           ═══════════════════════════════════════════ */}

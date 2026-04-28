@@ -7,6 +7,14 @@ import { TestimonialsSection } from "@/components/sections/TestimonialsSection";
 import { CTASection } from "@/components/sections/CTASection";
 import { DevicesSection } from "@/components/sections/DevicesSection";
 import { PRICING_PLANS } from "@/lib/constants";
+import { SchemaMarkup } from "@/components/schema-markup";
+import {
+  generateWebSiteSchema,
+  generateOrganizationSchema,
+  generateWebPageSchema,
+  generateBreadcrumbSchema,
+  SITE_URL,
+} from "@/lib/schema";
 
 export const metadata: Metadata = {
   title: {
@@ -18,8 +26,20 @@ export const metadata: Metadata = {
 };
 
 export default function HomePage() {
+  const schemas = [
+    generateWebSiteSchema(),
+    generateOrganizationSchema(),
+    generateWebPageSchema(
+      "Bald Eagle Streamz — #1 IPTV Provider in the USA",
+      "Bald Eagle Streamz offers 15,000+ live channels & 50,000+ movies in HD & 4K. Best IPTV service in the USA. 50+ countries covered. Start your free trial today.",
+      SITE_URL
+    ),
+    generateBreadcrumbSchema([{ name: "Home", url: SITE_URL }]),
+  ];
+
   return (
     <>
+      <SchemaMarkup schemas={schemas} />
       <HeroSection />
       <ChannelCountBanner />
       <FeatureGrid />

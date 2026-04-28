@@ -3,6 +3,13 @@ import { PageHeader } from "@/components/sections/PageHeader";
 import { BlogCard } from "@/components/sections/BlogCard";
 import { CTASection } from "@/components/sections/CTASection";
 import { BLOG_POSTS } from "@/lib/constants";
+import { SchemaMarkup } from "@/components/schema-markup";
+import {
+  generateBlogSchema,
+  generateWebPageSchema,
+  generateBreadcrumbSchema,
+  SITE_URL,
+} from "@/lib/schema";
 
 export const metadata: Metadata = {
   title: "IPTV Blog — Guides, Tips & Streaming News",
@@ -14,8 +21,25 @@ export const metadata: Metadata = {
 const ALL_CATEGORIES = ["All", ...Array.from(new Set(BLOG_POSTS.map((p) => p.category)))];
 
 export default function BlogPage() {
+  const schemas = [
+    generateBlogSchema(
+      `${SITE_URL}/blog`,
+      "IPTV setup guides, streaming tips, device tutorials, and channel reviews from the Bald Eagle Streamz team. Stay informed and stream smarter."
+    ),
+    generateWebPageSchema(
+      "IPTV Blog — Guides, Tips & Streaming News",
+      "IPTV setup guides, streaming tips, device tutorials, and channel reviews from the Bald Eagle Streamz team. Stay informed and stream smarter.",
+      `${SITE_URL}/blog`
+    ),
+    generateBreadcrumbSchema([
+      { name: "Home", url: SITE_URL },
+      { name: "Blog", url: `${SITE_URL}/blog` },
+    ]),
+  ];
+
   return (
     <>
+      <SchemaMarkup schemas={schemas} />
       <PageHeader
         title="Blog"
         subtitle="Guides, tutorials, and news from the world of IPTV streaming."

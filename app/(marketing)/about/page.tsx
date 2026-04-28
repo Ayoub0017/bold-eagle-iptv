@@ -2,6 +2,12 @@ import type { Metadata } from "next";
 import { Shield, Globe, Zap, HeartHandshake, Trophy, Users } from "lucide-react";
 import { PageHeader } from "@/components/sections/PageHeader";
 import { CTASection } from "@/components/sections/CTASection";
+import { SchemaMarkup } from "@/components/schema-markup";
+import {
+  generateWebPageSchema,
+  generateBreadcrumbSchema,
+  SITE_URL,
+} from "@/lib/schema";
 
 export const metadata: Metadata = {
   title: "About Us — American IPTV Provider",
@@ -69,8 +75,22 @@ const TIMELINE = [
 ];
 
 export default function AboutPage() {
+  const schemas = [
+    generateWebPageSchema(
+      "About Us — American IPTV Provider",
+      "Bald Eagle Streamz is a trusted American IPTV provider with 15,000+ channels and 50,000+ VOD titles. Learn about our mission, values, and story.",
+      `${SITE_URL}/about`,
+      "AboutPage"
+    ),
+    generateBreadcrumbSchema([
+      { name: "Home", url: SITE_URL },
+      { name: "About", url: `${SITE_URL}/about` },
+    ]),
+  ];
+
   return (
     <>
+      <SchemaMarkup schemas={schemas} />
       <PageHeader
         title="About Bald Eagle Streamz"
         subtitle="Bald Eagle Streamz is an American IPTV provider that offers 15,000+ live channels, 50,000+ movies and series, and crystal-clear HD & 4K streaming — all with 24/7 live support and no long-term contracts."

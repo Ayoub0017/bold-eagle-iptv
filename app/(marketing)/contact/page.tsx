@@ -12,6 +12,13 @@ import { PageHeader } from "@/components/sections/PageHeader";
 import { CTASection } from "@/components/sections/CTASection";
 import { Button } from "@/components/ui/button";
 import { WHATSAPP_NUMBER } from "@/lib/constants";
+import { SchemaMarkup } from "@/components/schema-markup";
+import {
+  generateOrganizationSchema,
+  generateWebPageSchema,
+  generateBreadcrumbSchema,
+  SITE_URL,
+} from "@/lib/schema";
 
 const CONTACT_WHATSAPP_URL = `https://wa.me/${WHATSAPP_NUMBER.replace(/[^0-9]/g, "")}?text=${encodeURIComponent("Hello! I need help with my IPTV subscription.")}`;
 
@@ -50,8 +57,23 @@ const CONTACT_METHODS = [
 ];
 
 export default function ContactPage() {
+  const schemas = [
+    generateOrganizationSchema(),
+    generateWebPageSchema(
+      "Contact 24/7 Support",
+      "Need help with your IPTV subscription? Contact Bald Eagle Streamz's 24/7 support team via live chat or email.",
+      `${SITE_URL}/contact`,
+      "ContactPage"
+    ),
+    generateBreadcrumbSchema([
+      { name: "Home", url: SITE_URL },
+      { name: "Contact", url: `${SITE_URL}/contact` },
+    ]),
+  ];
+
   return (
     <>
+      <SchemaMarkup schemas={schemas} />
       <PageHeader
         title="Get in Touch"
         subtitle="Our support team is available 24/7. Whether you need setup help, have a billing question, or just want to explore your options — we're here."
