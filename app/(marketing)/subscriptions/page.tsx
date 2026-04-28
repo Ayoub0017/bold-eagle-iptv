@@ -4,6 +4,13 @@ import { PricingCard } from "@/components/sections/PricingCard";
 import { FAQAccordion } from "@/components/sections/FAQAccordion";
 import { CTASection } from "@/components/sections/CTASection";
 import { PRICING_PLANS, FAQS } from "@/lib/constants";
+import { SchemaMarkup } from "@/components/schema-markup";
+import {
+  generateWebPageSchema,
+  generateBreadcrumbSchema,
+  generateFAQSchema,
+  SITE_URL,
+} from "@/lib/schema";
 
 export const metadata: Metadata = {
   title: "IPTV Subscriptions & Pricing Plans",
@@ -13,8 +20,25 @@ export const metadata: Metadata = {
 };
 
 export default function SubscriptionsPage() {
+  const schemas = [
+    generateWebPageSchema(
+      "IPTV Subscriptions & Pricing Plans",
+      "Choose an IPTV plan from $30/month. 3, 6, 12 or 24-month options. 15,000+ channels, HD & 4K quality, 24/7 support. Free 24-hour trial. No contracts.",
+      `${SITE_URL}/subscriptions`
+    ),
+    generateBreadcrumbSchema([
+      { name: "Home", url: SITE_URL },
+      { name: "Subscriptions", url: `${SITE_URL}/subscriptions` },
+    ]),
+  ];
+
+  if (FAQS.length > 0) {
+    schemas.push(generateFAQSchema(FAQS));
+  }
+
   return (
     <>
+      <SchemaMarkup schemas={schemas} />
       <PageHeader
         title="IPTV Subscriptions"
         subtitle="Simple, honest pricing. No hidden fees, no auto-renewals, no contracts. Pick the plan that fits your budget and viewing habits."
