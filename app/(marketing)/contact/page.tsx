@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { Mail, Clock, MessageSquare, MessageCircle } from "lucide-react";
+import { Mail, Clock, MessageSquare, MessageCircle, MapPin } from "lucide-react";
 
 function IconX({ className }: { className?: string }) {
   return (
@@ -53,6 +53,12 @@ const CONTACT_METHODS = [
     label: "Twitter / X",
     value: "@BaldEagleStreamz",
     description: "For quick updates and announcements",
+  },
+  {
+    icon: MapPin,
+    label: "Company Address",
+    value: "3591 Terra Cotta Street, TOLEDO, IL 62468",
+    description: "Our physical office location",
   },
 ];
 

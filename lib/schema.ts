@@ -33,6 +33,14 @@ export function generateOrganizationSchema(sameAs?: string[]): SchemaObject {
     name: SITE_NAME,
     url: SITE_URL,
     logo: `${SITE_URL}/icon.svg`,
+    address: {
+      "@type": "PostalAddress",
+      "streetAddress": "3591 Terra Cotta Street",
+      "addressLocality": "TOLEDO",
+      "addressRegion": "IL",
+      "postalCode": "62468",
+      "addressCountry": "US"
+    },
     contactPoint: {
       "@type": "ContactPoint",
       telephone: "+33753820307", // WhatsApp Number
