@@ -23,7 +23,7 @@ import {
 const CONTACT_WHATSAPP_URL = `https://wa.me/${WHATSAPP_NUMBER.replace(/[^0-9]/g, "")}?text=${encodeURIComponent("Hello! I need help with my IPTV subscription.")}`;
 
 export const metadata: Metadata = {
-  title: "Contact 24/7 Support",
+  title: "Contact 24/7 IPTV Support",
   description:
     "Need help with your IPTV subscription? Contact Bald Eagle Streamz's 24/7 support team via live chat or email. Average response time under 15 minutes.",
   alternates: { canonical: "/contact" },
@@ -60,7 +60,7 @@ export default function ContactPage() {
   const schemas = [
     generateOrganizationSchema(),
     generateWebPageSchema(
-      "Contact 24/7 Support",
+      "Contact 24/7 IPTV Support",
       "Need help with your IPTV subscription? Contact Bald Eagle Streamz's 24/7 support team via live chat or email.",
       `${SITE_URL}/contact`,
       "ContactPage"

@@ -52,7 +52,7 @@ export async function generateMetadata({
   if (!plan) return { title: "Plan Not Found" };
 
   return {
-    title: `${plan.name} Plan - ${plan.duration} IPTV Subscription`,
+    title: `${plan.duration} IPTV Subscription | ${plan.name} Plan`,
     description: `Get the Bald Eagle Streamz ${plan.name} plan — ${plan.duration} of premium IPTV for just $${plan.price} ($${plan.perMonth.toFixed(2)}/mo). ${plan.features.slice(0, 4).join(", ")}. Free 24-hour trial.`,
     alternates: { canonical: `/subscriptions/${plan.id}` },
   };
@@ -117,7 +117,7 @@ export default async function PlanPage({
   
   const schemas = [
     generateWebPageSchema(
-      `${plan.name} Plan - ${plan.duration} IPTV Subscription`,
+      `${plan.duration} IPTV Subscription | ${plan.name} Plan`,
       `Get the Bald Eagle Streamz ${plan.name} plan — ${plan.duration} of premium IPTV for just $${plan.price} ($${plan.perMonth.toFixed(2)}/mo).`,
       planUrl
     ),

@@ -18,7 +18,7 @@ import {
 
 export const metadata: Metadata = {
   title: {
-    absolute: "Bald Eagle Streamz — #1 IPTV Provider in the USA",
+    absolute: "Best IPTV Provider in the USA | Bald Eagle Streamz",
   },
   description:
     "Bald Eagle Streamz offers 15,000+ live channels & 50,000+ movies in HD & 4K. Best IPTV service in the USA. 50+ countries covered. Start your free trial today.",
@@ -30,7 +30,7 @@ export default function HomePage() {
     generateWebSiteSchema(),
     generateOrganizationSchema(),
     generateWebPageSchema(
-      "Bald Eagle Streamz — #1 IPTV Provider in the USA",
+      "Best IPTV Provider in the USA | Bald Eagle Streamz",
       "Bald Eagle Streamz offers 15,000+ live channels & 50,000+ movies in HD & 4K. Best IPTV service in the USA. 50+ countries covered. Start your free trial today.",
       SITE_URL
     ),

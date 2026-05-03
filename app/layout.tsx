@@ -12,7 +12,7 @@ const inter = Inter({
 export const metadata: Metadata = {
   metadataBase: new URL("https://baldeaglestreamz.com"),
   title: {
-    default: "Bald Eagle Streamz — #1 IPTV Provider in the USA",
+    default: "Best IPTV Provider in the USA | Bald Eagle Streamz",
     template: "%s | Bald Eagle Streamz",
   },
   description:
@@ -32,7 +32,7 @@ export const metadata: Metadata = {
     locale: "en_US",
     url: "https://baldeaglestreamz.com",
     siteName: "Bald Eagle Streamz",
-    title: "Bald Eagle Streamz — #1 IPTV Provider in the USA",
+    title: "Best IPTV Provider in the USA | Bald Eagle Streamz",
     description:
       "15,000+ live channels & 50,000+ movies in HD & 4K. Best IPTV service in the USA. Free 24-hour trial.",
     images: [
@@ -40,15 +40,18 @@ export const metadata: Metadata = {
         url: "/og-image.png",
         width: 1200,
         height: 630,
-        alt: "Bald Eagle Streamz — Best IPTV Provider in the USA",
+        alt: "Best IPTV Provider in the USA | Bald Eagle Streamz",
       },
     ],
   },
   twitter: {
     card: "summary_large_image",
-    title: "Bald Eagle Streamz — #1 IPTV Provider in the USA",
+    title: "Best IPTV Provider in the USA | Bald Eagle Streamz",
     description:
       "15,000+ live channels & 50,000+ movies in HD & 4K. Free 24-hour trial. No contracts.",
+  },
+  alternates: {
+    canonical: "https://baldeaglestreamz.com",
   },
   robots: {
     index: true,
@@ -69,7 +72,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="en" className={inter.variable}>
+    <html lang="en-US" className={inter.variable}>
       <head>
         {/* Google Analytics */}
         <Script

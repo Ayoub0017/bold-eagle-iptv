@@ -12,7 +12,7 @@ import {
 } from "@/lib/schema";
 
 export const metadata: Metadata = {
-  title: "IPTV Blog — Guides, Tips & Streaming News",
+  title: "IPTV Blog | Guides, Tips & Streaming News",
   description:
     "IPTV setup guides, streaming tips, device tutorials, and channel reviews from the Bald Eagle Streamz team. Stay informed and stream smarter.",
   alternates: { canonical: "/blog" },
@@ -27,7 +27,7 @@ export default function BlogPage() {
       "IPTV setup guides, streaming tips, device tutorials, and channel reviews from the Bald Eagle Streamz team. Stay informed and stream smarter."
     ),
     generateWebPageSchema(
-      "IPTV Blog — Guides, Tips & Streaming News",
+      "IPTV Blog | Guides, Tips & Streaming News",
       "IPTV setup guides, streaming tips, device tutorials, and channel reviews from the Bald Eagle Streamz team. Stay informed and stream smarter.",
       `${SITE_URL}/blog`
     ),

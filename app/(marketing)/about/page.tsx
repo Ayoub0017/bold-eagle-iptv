@@ -10,7 +10,7 @@ import {
 } from "@/lib/schema";
 
 export const metadata: Metadata = {
-  title: "About Us — American IPTV Provider",
+  title: "About Us | American IPTV Provider",
   description:
     "Bald Eagle Streamz is a trusted American IPTV provider with 15,000+ channels and 50,000+ VOD titles. Learn about our mission, values, and story.",
   alternates: { canonical: "/about" },
@@ -77,7 +77,7 @@ const TIMELINE = [
 export default function AboutPage() {
   const schemas = [
     generateWebPageSchema(
-      "About Us — American IPTV Provider",
+      "About Us | American IPTV Provider",
       "Bald Eagle Streamz is a trusted American IPTV provider with 15,000+ channels and 50,000+ VOD titles. Learn about our mission, values, and story.",
       `${SITE_URL}/about`,
       "AboutPage"
